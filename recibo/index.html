@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recibo Aluguel </title>
+
+    <!-- start meus css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- end css -->
+    
+</head>
+<body>
+    
+    <!-- start menu -->
+    <header>
+        <nav>
+            <ul>
+                <li>
+                <a href="#">Menu</a>
+                </li>
+                <li>
+                <a href="#">Recibo</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- end menu -->
+
+    <!-- start principal -->
+    <main>
+        <section class="container">
+            <form action="">
+                <label>
+                    Valor
+                </label>
+                <input type="number" placeholder="00,00" min="0" class="input-valor" required/>
+                <small>Valor recebido</small>
+                <label>
+                Mês de ref..:
+                </label>
+                <select name="meses" required>
+                    <option value="1">Janeiro</option>
+                    <option value="2">Fevereiro</option>
+                    <option value="3">Março</option>
+                    <option value="4">Abril</option>
+                    <option value="5">Maio</option>
+                    <option value="6">Junho</option>
+                    <option value="7">Julho</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Setembro</option>
+                    <option value="10">Outubro</option>
+                    <option value="11">Novembro</option>
+                    <option value="12">Dezembro</option>
+                </select>
+
+                <label>
+                    Ano
+                </label>
+                <input type="number" class="input-ano" placeholder="ano" min="1998" max="9999" required />
+                <label>
+                    CPF ou CNPJ(opcional):
+                </label>
+                <input type="text" class="input" placeholder="CPF ou CNPJ" required>
+                <small>Somente números</small>
+
+                <h2>Endereço do imóvel locado:</h2>
+                <br>
+                <hr>
+                <label>
+                    Rua
+                </label>
+                <input type="text" placeholder="rua..." class="input" required />
+                <label>
+                    Complemento(Opcional):
+                </label>
+                <input type="text" class="input" required />
+                <label>
+                    Número:
+                </label>
+                <input type="number" class="input" required />
+                <label>
+                    Bairro
+                </label>
+                <input type="text" class="input" required />
+                <label>
+                    Tipo Imóvel:
+                </label>
+                <select name="tipoImovel">
+                    <option value="1">Residencial</option>
+                    <option value="2">Comercial</option>
+                    <option value="3">Rural</option>
+                </select>
+                <label>
+                    Cidade:
+                </label>
+                <input type="text" class="input" required />
+                <label>
+                    Estado:
+                </label>
+                <select name="estados" class="input" required>
+                    <option value="1">SP</option>
+                </select>
+                <label>
+                    CEP:
+                </label>
+                <input type="number" class="input" required />
+                <br>
+                <hr>
+                <br>
+                
+            </form>
+        </section>
+    </main>
+    <!-- end principal -->
+
+    <!-- start footer -->
+    <footer>
+        <ul>
+            <li>
+                <a href="#" target="_blank">Github</a>
+            </li>
+            <li>
+                <a href="#" target="_blank">Social media</a>
+            </li>
+        </ul>
+    </footer>
+    <!-- end footer -->
+
+</body>
+</html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,19 +10,20 @@
     <!-- start meus css -->
     <link rel="stylesheet" href="style.css">
     <!-- end css -->
-    
+
 </head>
+
 <body>
-    
+
     <!-- start menu -->
     <header>
         <nav>
             <ul>
                 <li>
-                <a href="#">Menu</a>
+                    <a href="#">Recibo Online</a>
                 </li>
                 <li>
-                <a href="#">Recibo</a>
+                    <a href="#">Como funciona?</a>
                 </li>
             </ul>
         </nav>
@@ -31,102 +33,166 @@
     <!-- start principal -->
     <main>
         <section class="container">
+            <h1 class="title">Recibo de Aluguel</h1>
             <form action="">
-                <label>
-                    Valor
-                </label>
-                <input type="number" placeholder="00,00" min="0" class="input-valor" required/>
-                <small>Valor recebido</small>
-                <label>
-                Mês de ref..:
-                </label>
-                <select name="meses" required>
-                    <option value="1">Janeiro</option>
-                    <option value="2">Fevereiro</option>
-                    <option value="3">Março</option>
-                    <option value="4">Abril</option>
-                    <option value="5">Maio</option>
-                    <option value="6">Junho</option>
-                    <option value="7">Julho</option>
-                    <option value="8">Agosto</option>
-                    <option value="9">Setembro</option>
-                    <option value="10">Outubro</option>
-                    <option value="11">Novembro</option>
-                    <option value="12">Dezembro</option>
-                </select>
+                <section class="field">
+                    <section class="columns">
+                        <section class="column is-4">
+                            <label for="valor" class="label">
+                                Valor:
+                            </label>
+                            <section class="control">
+                                <input type="number" placeholder="00,00" min="0" class="input is-primary"
+                                    autofocus="autofocus" required />
+                            </section>
+                        </section>
+                    </section>
+                </section>
 
-                <label>
-                    Ano
-                </label>
-                <input type="number" class="input-ano" placeholder="ano" min="1998" max="9999" required />
-                <label>
-                    CPF ou CNPJ(opcional):
-                </label>
-                <input type="text" class="input" placeholder="CPF ou CNPJ" required>
-                <small>Somente números</small>
+                <p class="help">Valor recebido</p>
+                <section class="column">
+                    <label for="mesReferencia" class="label">
+                        Mês de ref..:
+                    </label>
+                    <section class="control">
+                        <section class="select">
+                            <select name="meses" required>
+                                <option value="1">Janeiro</option>
+                                <option value="2">Fevereiro</option>
+                                <option value="3">Março</option>
+                                <option value="4">Abril</option>
+                                <option value="5">Maio</option>
+                                <option value="6">Junho</option>
+                                <option value="7">Julho</option>
+                                <option value="8">Agosto</option>
+                                <option value="9">Setembro</option>
+                                <option value="10">Outubro</option>
+                                <option value="11">Novembro</option>
+                                <option value="12">Dezembro</option>
+                            </select>
+                            </select>
+                        </section>
+                    </section>
 
-                <h2>Endereço do imóvel locado:</h2>
-                <br>
-                <hr>
-                <label>
-                    Rua
-                </label>
-                <input type="text" placeholder="rua..." class="input" required />
-                <label>
-                    Complemento(Opcional):
-                </label>
-                <input type="text" class="input" required />
-                <label>
-                    Número:
-                </label>
-                <input type="number" class="input" required />
-                <label>
-                    Bairro
-                </label>
-                <input type="text" class="input" required />
-                <label>
-                    Tipo Imóvel:
-                </label>
-                <select name="tipoImovel">
-                    <option value="1">Residencial</option>
-                    <option value="2">Comercial</option>
-                    <option value="3">Rural</option>
-                </select>
-                <label>
-                    Cidade:
-                </label>
-                <input type="text" class="input" required />
-                <label>
-                    Estado:
-                </label>
-                <select name="estados" class="input" required>
-                    <option value="1">SP</option>
-                </select>
-                <label>
-                    CEP:
-                </label>
-                <input type="number" class="input" required />
-                <br>
-                <hr>
-                <br>
-                
+                    <label>
+                        Ano:
+                    </label>
+                    <input type="number" class="input-ano" placeholder="ano" min="1998" max="9999" required />
+                    <label>
+                        CPF ou CNPJ(opcional):
+                    </label>
+                    <input type="text" class="input" placeholder="CPF ou CNPJ" required>
+                    <small>Somente números</small>
+
+                    <h2>Endereço do imóvel locado:</h2>
+                    <br>
+                    <hr>
+                    <label>
+                        Rua:
+                    </label>
+                    <input type="text" placeholder="rua..." class="input" required />
+                    <label>
+                        Complemento(Opcional):
+                    </label>
+                    <input type="text" class="input" required />
+                    <label>
+                        Número:
+                    </label>
+                    <input type="number" class="input" required />
+                    <label>
+                        Bairro
+                    </label>
+                    <input type="text" class="input" required />
+                    <label>
+                        Tipo Imóvel:
+                    </label>
+                    <select name="tipoImovel">
+                        <option value="1">Residencial</option>
+                        <option value="2">Comercial</option>
+                        <option value="3">Rural</option>
+                    </select>
+                    <label>
+                        Cidade:
+                    </label>
+                    <input type="text" class="input" required />
+                    <label>
+                        Estado:
+                    </label>
+                    <select name="estado" required>
+                        <option value="">Selecione o Estado...</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                    <label>
+                        CEP:
+                    </label>
+                    <input type="number" class="input" required />
+                    <br>
+                    <hr>
+                    <br>
+
             </form>
         </section>
     </main>
     <!-- end principal -->
 
     <!-- start footer -->
-    <footer>
-        <ul>
-            <li>
-                <a href="#" target="_blank">Github</a>
-            </li>
-            <li>
-                <a href="#" target="_blank">Social media</a>
-            </li>
-        </ul>
+    <footer class="footer m-t-40">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p>
+                    &copy;2017-2022 | <strong>Recibo Online</strong> Gerador de recibos | By <a
+                        href="https://vitalbit.com.br" target="_blank">vitalbit</a> | <a
+                        href="https://www.reciboonline.com.br/politica-de-privacidades">Privacidade</a> | <a
+                        href="#">suporte@reciboonline.com.br<span></span></a>
+                </p>
+                <p>
+                    <!-- <script data-cfasync="false"
+                        src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                    <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+                        data-preference-id="22577824-6c2137b0-bcba-4147-8f64-b3fe5b56e08f"
+                        type="7f0d886ae7ee5e49a471ab99-text/javascript"></script>
+                    <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+                        data-preference-id="22577824-a544f476-c5fd-474c-9aeb-0853ed514de0"
+                        type="7f0d886ae7ee5e49a471ab99-text/javascript"></script>
+                    <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+                        data-preference-id="22577824-bc1c2b8a-77de-46db-8a2b-0eb69162f121"
+                        type="7f0d886ae7ee5e49a471ab99-text/javascript"></script> -->
+                </p>
+                <!-- <p class="m-t-30">
+                    <img src="https://www.reciboonline.com.br/dist/images/pix-doar.png" width="159" height="232"
+                        alt="QR Code Doar pelo Pix">
+                </p> -->
+            </div>
+        </div>
     </footer>
     <!-- end footer -->
 
 </body>
+
 </html>
